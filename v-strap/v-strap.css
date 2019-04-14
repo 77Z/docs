@@ -1,0 +1,403 @@
+/* 77Z TM */
+
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(material-icons/material-icons.woff2) format('woff2');
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    font-feature-settings: "liga";
+    -webkit-font-smoothing: antialiased;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(roboto/Roboto-Regular.ttf) format(truetype);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Droid';
+    src: url(droid/DroidLogo-Regular.ttf) format(truetype);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Droid Bold';
+    src: url(droid/DroidLogo-Bold.ttf) format(truetype);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Google Sans';
+    src: url(google-sans/GoogleSans-Regular.ttf) format(truetype);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(montserrat/Montserrat-Regular.otf) format(opentype);
+    font-weight: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+
+.top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: #4286f4;
+    z-index: 999;
+}
+
+.top-bar span {
+    font-size: 40px;
+    margin-left: 10px;
+    margin-top: 5px;
+    color: white;
+}
+
+.side-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 300px;
+    background: #4286f4;
+    z-index: 998;
+}
+
+.content {
+    margin-top: 55px;
+    text-overflow: auto;
+}
+
+.content-side-bar {
+    margin-left: 305px;
+    margin-top: 55px;
+}
+
+.content-for-side {
+    width: 100%;
+    margin-top: 55px;
+}
+
+.content-center {
+    width: 50%;
+    margin: 0px auto;
+}
+
+.article-header {
+    font-weight: bold;
+    font-family: 'Google Sans';
+}
+
+.article-thumbnail {
+    width: 100%;
+    height: 25%;
+}
+
+.spinner-large {
+    border: 10px solid transparent;
+    border-top: 10px solid blue;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    background: transparent;
+    animation: spin 1s linear infinite;
+    -webkit-animation: spin 1s linear infinite;
+}
+
+.spinner-medium {
+    border: 5px solid transparent;
+    border-top: 5px solid blue;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background: transparent;
+    animation: spin 1s linear infinite;
+    -webkit-animation: spin 1s linear infinite;
+}
+
+.spinner-small {
+    border: 3px solid transparent;
+    border-top: 3px solid blue;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    background: transparent;
+    animation: spin 1s linear infinite;
+    -webkit-animation: spin 1s linear infinite;
+}
+
+.checkbox {
+    width: 0;
+    height: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+.checkbox::after {
+    position: absolute;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    content: '';
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.checkbox:checked::after {
+    width: 20px;
+    border-right: 1px solid #005ba5;
+    border-top: none;
+    border-left: none;
+    border-bottom: 1px solid #005ba5;
+    transform: rotate(45deg);
+}
+
+.btn {
+    color: white;
+    background: #4286f4;
+    text-decoration: none;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: 'Google Sans';
+}
+
+.btn-raised {
+    color: white;
+    background: #4286f4;
+    text-decoration: none;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: 'Google Sans';
+    box-shadow: 0px 0px 5px gray;
+}
+
+.p {
+    font-size: 16px;
+}
+
+.p-inline {
+    font-size: 16px;
+    display: inline;
+}
+
+.inline-code-block {
+    display: inline;
+    font-size: 16px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-family: sans-serif;
+    border-radius: 3px;
+    background: #cccccc;
+}
+
+.font-30px {
+    font-size: 30px;
+}
+
+.bg-red {
+    background: #d32f2f;
+}
+
+.bg-pink {
+    background: #ff4081;
+}
+
+.bg-purple {
+    background: #aa00ff;
+}
+
+.bg-indigo {
+    background: #536dfe;
+}
+
+.bg-blue {
+    background: #4286f4;
+}
+
+.bg-cyan {
+    background: #00e5ff;
+}
+
+.bg-teal {
+    background: #1de9b6;
+}
+
+.bg-green {
+    background: #00e676;
+}
+
+.bg-lgreen {
+    background: #76ff03;
+}
+
+.bg-yellow {
+    background: #ffea00;
+}
+
+.bg-amber {
+    background: #ffc400;
+}
+
+.bg-orange {
+    background: #ff9100;
+}
+
+.bg-dorange {
+    background: #ff3d00;
+}
+
+.bg-black {
+    background: #000000;
+}
+
+.bg-white {
+    background: #ffffff;
+}
+
+.color-red {
+    color: #d32f2f;
+}
+
+.color-pink {
+    color: #ff4081;
+}
+
+.color-purple {
+    color: #aa00ff;
+}
+
+.color-indigo {
+    color: #536dfe;
+}
+
+.color-blue {
+    color: #4286f4;
+}
+
+.color-cyan {
+    color: #00e5ff;
+}
+
+.color-teal {
+    color: #1de9b6;
+}
+
+.color-green {
+    color: #00e676;
+}
+
+.color-lgreen {
+    color: #76ff03;
+}
+
+.color-yellow {
+    color: #ffea00;
+}
+
+.color-amber {
+    color: #ffc400;
+}
+
+.color-orange {
+    color: #ff9100;
+}
+
+.color-dorange {
+    color: #ff3d00;
+}
+
+.color-black {
+    color: #000000;
+}
+
+.color-white {
+    color: #ffffff;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.font-google-sans {
+    font-family: 'Google Sans';
+}
+
+.font-droid {
+    font-family: 'Droid';
+}
+
+.font-roboto {
+    font-family: 'Roboto';
+}
+
+.font-montserrat {
+    font-family: 'Montserrat';
+}
+
+.font-sans-serif {
+    font-family: sans-serif;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .content-center {
+        width: 100%;
+    }
+
+    .content-side-bar {
+        margin-left: 0px;
+    }
+
+    .side-bar {
+        left: -350px;
+    }
+}
